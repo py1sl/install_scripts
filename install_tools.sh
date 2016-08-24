@@ -6,7 +6,7 @@
 # After the build finishes run:
 #  $ source ~/.bashrc
 # first alara
-sudo apt-get install build-essentail libtool automake
+sudo apt-get install build-essential libtool automake
 cd $HOME
 mkdir alara
 cd alara
@@ -15,7 +15,7 @@ cd alara
 autoreconf -fi
 mkdir bld
 cd bld
-../configure --prefix = $HOME/alara/alara/bld
+../configure --prefix=/home/steve/alara
 make
 make install
 #
