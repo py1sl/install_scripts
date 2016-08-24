@@ -50,7 +50,7 @@ cd PyTAPS-1.4/
 python setup.py --iMesh-path=$HOME/opt/moab --without-iRel --without-iGeom install --user
 cd ..
 # Install PyNE
-git clone https://github.com/pyne/pyne.git
+git clone https://github.com/py1sl/pyne.git
 cd pyne
 python setup.py install --user -- -DMOAB_LIBRARY=$HOME/opt/moab/lib -DMOAB_INCLUDE_DIR=$HOME/opt/moab/include
 echo "export PATH=$HOME/.local/bin:\$PATH" >> ~/.bashrc
