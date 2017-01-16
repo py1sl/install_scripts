@@ -8,6 +8,8 @@
 # first alara
 sudo apt-get install build-essential libtool automake
 cd $HOME
+# clean any earlier install
+rm alara -rf
 mkdir alara
 cd alara
 git clone https://github.com/svalinn/alara.git
@@ -15,13 +17,15 @@ cd alara
 autoreconf -fi
 mkdir bld
 cd bld
-../configure --prefix=/home/steve/alara
+../configure --prefix=/home/pi/alara
 make
 make install
 #
 #
 # now other tools
 cd $HOME
+# clean any earlier install
+rm toolkit -rf
 mkdir toolkit
 cd toolkit
 git clone https://github.com/py1sl/neutron_tools
